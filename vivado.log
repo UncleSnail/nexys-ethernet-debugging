@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb  3 20:01:16 2022
+# Process ID: 3396
+# Current directory: C:/Users/Primus/Desktop/Determinacy/Code/436_design_debugger
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17540 C:\Users\Primus\Desktop\Determinacy\Code\436_design_debugger\design_debugger.xpr
+# Log file: C:/Users/Primus/Desktop/Determinacy/Code/436_design_debugger/vivado.log
+# Journal file: C:/Users/Primus/Desktop/Determinacy/Code/436_design_debugger\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Primus/Desktop/Determinacy/Code/436_design_debugger/design_debugger.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] Board Part Repository Path: Directory not found as 'C:/../AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'; using path 'C:/Users/Primus/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:01:05 ; elapsed = 00:00:37 . Memory (MB): peak = 874.652 ; gain = 258.379
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  3 20:06:06 2022...

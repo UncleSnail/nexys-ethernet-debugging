@@ -1,0 +1,99 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu May 13 15:15:06 2021
+| Host         : PRIMUS running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file testlab_control_sets_placed.rpt
+| Design       : testlab
+| Device       : xc7a200t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    21 |
+|    Minimum number of control sets                        |    21 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    87 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    21 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              53 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              50 |           15 |
+| Yes          | No                    | No                     |             103 |           33 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              27 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+
+|     Clock Signal    |                 Enable Signal                 |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++---------------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  clk125MHz          | ethernet/i_rgmii_tx/doutctl[1]_i_1_n_0        |                                               |                1 |              1 |
+|  clk125MHz          | ethernet/i_rgmii_tx/doutctl[0]_i_1_n_0        |                                               |                1 |              1 |
+|  eth_rxck_IBUF_BUFG | ethernet/i_rgmii_rx/link_full_duplex_i_1_n_0  |                                               |                1 |              1 |
+|  eth_rxck_IBUF_BUFG |                                               |                                               |                1 |              3 |
+|  clk125MHz          | ethernet/i_add_crc32/data_enable_out          | ethernet/i_add_preamble/p_0_in__0[2]          |                1 |              4 |
+|  clk125MHz          | ethernet/data/E[0]                            | ethernet/data/SS[0]                           |                1 |              4 |
+|  clk125MHz          |                                               | ethernet/de_count[6]_i_1_n_0                  |                2 |              5 |
+|  clk125MHz          | ethernet/data/p_index[7]_i_2_n_0              | ethernet/data/p_index[7]_i_1_n_0              |                2 |              5 |
+|  clk125MHz          | ethernet/data/crc                             | ethernet/data/data_enable_reg_0               |                2 |              7 |
+|  clk125MHz          | ethernet/i_rgmii_tx/sel                       | ethernet/i_add_preamble/data_enable_out_reg_0 |                3 |              7 |
+|  clk125MHz          |                                               | ethernet/data/counter_reg_n_0_[11]            |                4 |              8 |
+|  clk125MHz          | ethernet/data/data_enable                     |                                               |                2 |              8 |
+|  clk125MHz          | ethernet/i_rgmii_tx/dout[7]_i_1_n_0           |                                               |                1 |              8 |
+|  clk125MHz          |                                               | sw_IBUF[3]                                    |                2 |             10 |
+|  clk125MHz          | ethernet/i_add_preamble/data_enable_out_reg_0 |                                               |                4 |             12 |
+|  clk125MHz          | ethernet/data/counter[11]_i_1_n_0             |                                               |                4 |             12 |
+|  clk125MHz          | ethernet/i_add_crc32/data_enable_out          |                                               |                3 |             19 |
+|  clk125MHz          | ethernet/sel                                  |                                               |                7 |             25 |
+|  clk125MHz          | ethernet/data/crc                             |                                               |                9 |             25 |
+|  clk125MHz          |                                               | ethernet/clear                                |                7 |             27 |
+|  clk125MHz          |                                               |                                               |               20 |             50 |
++---------------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+

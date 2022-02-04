@@ -1,0 +1,601 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 13 15:09:50 2021
+# Process ID: 2260
+# Current directory: C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.runs/synth_1
+# Command line: vivado.exe -log testlab.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testlab.tcl
+# Log file: C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.runs/synth_1/testlab.vds
+# Journal file: C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source testlab.tcl -notrace
+Command: synth_design -top testlab -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4764 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 879.137 ; gain = 177.426
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'testlab' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/new/testlab.vhd:44]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'gigabit_test' declared at 'C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:18' bound to instance 'ethernet' of component 'gigabit_test' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/new/testlab.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'gigabit_test' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:44]
+	Parameter N bound to: 128 - type: integer 
+	Parameter M bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'byte_data' declared at 'C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/byte_data.vhd:13' bound to instance 'data' of component 'byte_data' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'byte_data' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/byte_data.vhd:27]
+	Parameter N bound to: 128 - type: integer 
+WARNING: [Synth 8-3819] Generic 'm' not present in instantiated entity will be ignored [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'byte_data' (1#1) [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/byte_data.vhd:27]
+INFO: [Synth 8-3491] module 'add_crc32' declared at 'C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/add_crc32.vhd:14' bound to instance 'i_add_crc32' of component 'add_crc32' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'add_crc32' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/add_crc32.vhd:24]
+WARNING: [Synth 8-6014] Unused sequential element v_crc_reg was removed.  [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/add_crc32.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'add_crc32' (2#1) [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/add_crc32.vhd:24]
+INFO: [Synth 8-3491] module 'add_preamble' declared at 'C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/add_preamble.vhd:13' bound to instance 'i_add_preamble' of component 'add_preamble' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'add_preamble' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/add_preamble.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'add_preamble' (3#1) [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/add_preamble.vhd:23]
+INFO: [Synth 8-3491] module 'rgmii_tx' declared at 'C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_tx.vhd:29' bound to instance 'i_rgmii_tx' of component 'rgmii_tx' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'rgmii_tx' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_tx.vhd:44]
+INFO: [Synth 8-5534] Detected attribute (* iob = "TRUE" *) [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_tx.vhd:53]
+INFO: [Synth 8-5534] Detected attribute (* iob = "TRUE" *) [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_tx.vhd:54]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_d0' to cell 'ODDR' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_tx.vhd:153]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_d1' to cell 'ODDR' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_tx.vhd:155]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_d2' to cell 'ODDR' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_tx.vhd:157]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_d3' to cell 'ODDR' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_tx.vhd:159]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_ctl' to cell 'ODDR' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_tx.vhd:161]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_c' to cell 'ODDR' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_tx.vhd:164]
+INFO: [Synth 8-256] done synthesizing module 'rgmii_tx' (4#1) [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_tx.vhd:44]
+INFO: [Synth 8-3491] module 'rgmii_rx' declared at 'C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_rx.vhd:31' bound to instance 'i_rgmii_rx' of component 'rgmii_rx' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:265]
+INFO: [Synth 8-638] synthesizing module 'rgmii_rx' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_rx.vhd:45]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ddr_rx_ctl' to cell 'IDDR' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_rx.vhd:49]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ddr_rxd0' to cell 'IDDR' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_rx.vhd:51]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ddr_rxd1' to cell 'IDDR' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_rx.vhd:53]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ddr_rxd2' to cell 'IDDR' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_rx.vhd:55]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ddr_rxd3' to cell 'IDDR' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_rx.vhd:57]
+WARNING: [Synth 8-3848] Net data_enable in module/entity rgmii_rx does not have driver. [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_rx.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'rgmii_rx' (5#1) [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/rgmii_rx.vhd:45]
+INFO: [Synth 8-113] binding component instance 'bufg_100' to cell 'BUFG' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:296]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 10 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: -270.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 16 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 16 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'clocking' to cell 'PLLE2_BASE' [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:305]
+WARNING: [Synth 8-6014] Unused sequential element phy_ready_reg was removed.  [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'gigabit_test' (6#1) [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/imports/hdl/gigabit_test.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'testlab' (7#1) [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/sources_1/new/testlab.vhd:44]
+WARNING: [Synth 8-3331] design rgmii_rx has unconnected port data_enable
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port led[7]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port led[6]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port led[5]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port led[4]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port eth_mdio
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port sw[7]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port sw[6]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port sw[5]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port sw[4]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port eth_int_b
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port eth_pme_b
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 943.477 ; gain = 241.766
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 943.477 ; gain = 241.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 943.477 ; gain = 241.766
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/constrs_1/imports/CSCE836/masterConstraintFile.xdc]
+Finished Parsing XDC File [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/constrs_1/imports/CSCE836/masterConstraintFile.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.srcs/constrs_1/imports/CSCE836/masterConstraintFile.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/testlab_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/testlab_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1067.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLLE2_BASE => PLLE2_ADV: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1067.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1067.621 ; gain = 365.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1067.621 ; gain = 365.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1067.621 ; gain = 365.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "data_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_user" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1067.621 ; gain = 365.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 6     
++---XORs : 
+	   2 Input     32 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	  50 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	  50 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	  50 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module byte_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  50 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  50 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	  50 Input      1 Bit        Muxes := 3     
+Module add_crc32 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 8     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module add_preamble 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module rgmii_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module rgmii_rx 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 4     
+Module gigabit_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "data_user" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_valid" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port led[7]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port led[6]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port led[5]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port led[4]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port eth_mdio
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port sw[7]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port sw[6]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port sw[5]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port sw[4]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port eth_int_b
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port eth_pme_b
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ethernet/data/p_index0_inferred__0 /\ethernet/data/p_index_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ethernet/data/p_index0_inferred__0 /\ethernet/data/p_index_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ethernet/data/p_index0_inferred__0 /\ethernet/data/p_index_reg[0] )
+INFO: [Synth 8-3886] merging instance 'ethernet/max_count_reg[24]' (FD) to 'ethernet/max_count_reg[25]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ethernet/i_rgmii_tx/tx_ready_meta_reg )
+INFO: [Synth 8-3886] merging instance 'ethernet/i_rgmii_tx/tx_ready_reg' (FD) to 'ethernet/i_rgmii_tx/tx_ready_meta_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ethernet/i_rgmii_tx/hold_error_reg )
+INFO: [Synth 8-3886] merging instance 'ethernet/i_rgmii_tx/second_quarter_reg[1]' (FD) to 'ethernet/i_rgmii_tx/first_quarter_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ethernet/i_rgmii_tx/second_quarter_reg[2]' (FD) to 'ethernet/i_rgmii_tx/first_quarter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ethernet/i_rgmii_tx/second_quarter_reg[3]' (FD) to 'ethernet/i_rgmii_tx/first_quarter_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ethernet/i_rgmii_tx/second_quarter_reg[4]' (FD) to 'ethernet/i_rgmii_tx/first_quarter_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ethernet/i_rgmii_tx/second_quarter_reg[5]' (FD) to 'ethernet/i_rgmii_tx/first_quarter_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ethernet/i_rgmii_tx/tx_ready_meta_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1067.621 ; gain = 365.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1067.621 ; gain = 365.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1071.379 ; gain = 369.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 1080.406 ; gain = 378.695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4163] Replicating register \ethernet/i_rgmii_tx/doutctl_reg[1]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \ethernet/i_rgmii_tx/doutctl_reg[0]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \ethernet/i_rgmii_tx/dout_reg[7]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \ethernet/i_rgmii_tx/dout_reg[3]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \ethernet/i_rgmii_tx/dout_reg[6]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \ethernet/i_rgmii_tx/dout_reg[2]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \ethernet/i_rgmii_tx/dout_reg[5]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \ethernet/i_rgmii_tx/dout_reg[1]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \ethernet/i_rgmii_tx/dout_reg[4]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \ethernet/i_rgmii_tx/dout_reg[0]  to handle IOB=TRUE attribute
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1086.195 ; gain = 384.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1086.195 ; gain = 384.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1086.195 ; gain = 384.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1086.195 ; gain = 384.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1086.195 ; gain = 384.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1086.195 ; gain = 384.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|testlab     | ethernet/i_add_preamble/delay_data_valid_reg[6] | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|testlab     | ethernet/i_add_preamble/delay_data_reg[63]      | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++------------+-------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |    23|
+|3     |IDDR       |     5|
+|4     |LUT1       |     8|
+|5     |LUT2       |    26|
+|6     |LUT3       |    38|
+|7     |LUT4       |    62|
+|8     |LUT5       |    53|
+|9     |LUT6       |    92|
+|10    |MUXF7      |     4|
+|11    |ODDR       |     6|
+|12    |PLLE2_BASE |     1|
+|13    |SRL16E     |     9|
+|14    |FDRE       |   213|
+|15    |FDSE       |    20|
+|16    |IBUF       |    11|
+|17    |OBUF       |    12|
+|18    |OBUFT      |     4|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------+------+
+|      |Instance           |Module       |Cells |
++------+-------------------+-------------+------+
+|1     |top                |             |   590|
+|2     |  ethernet         |gigabit_test |   561|
+|3     |    data           |byte_data    |   157|
+|4     |    i_add_crc32    |add_crc32    |    59|
+|5     |    i_add_preamble |add_preamble |    48|
+|6     |    i_rgmii_rx     |rgmii_rx     |    17|
+|7     |    i_rgmii_tx     |rgmii_tx     |   118|
++------+-------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1086.195 ; gain = 384.484
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:11 ; elapsed = 00:01:30 . Memory (MB): peak = 1086.195 ; gain = 260.340
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1086.195 ; gain = 384.484
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1101.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLLE2_BASE => PLLE2_ADV: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:03 ; elapsed = 00:02:19 . Memory (MB): peak = 1101.887 ; gain = 706.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1101.887 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.runs/synth_1/testlab.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file testlab_utilization_synth.rpt -pb testlab_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 13 15:12:30 2021...

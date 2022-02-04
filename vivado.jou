@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb  3 20:01:16 2022
+# Process ID: 3396
+# Current directory: C:/Users/Primus/Desktop/Determinacy/Code/436_design_debugger
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17540 C:\Users\Primus\Desktop\Determinacy\Code\436_design_debugger\design_debugger.xpr
+# Log file: C:/Users/Primus/Desktop/Determinacy/Code/436_design_debugger/vivado.log
+# Journal file: C:/Users/Primus/Desktop/Determinacy/Code/436_design_debugger\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Primus/Desktop/Determinacy/Code/436_design_debugger/design_debugger.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 13 15:09:50 2021
+# Process ID: 2260
+# Current directory: C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.runs/synth_1
+# Command line: vivado.exe -log testlab.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testlab.tcl
+# Log file: C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.runs/synth_1/testlab.vds
+# Journal file: C:/Users/Primus/Desktop/Schule/Spring2020/CSCE836/Homework/csce_436_clark/design_debugger/design_debugger.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source testlab.tcl -notrace

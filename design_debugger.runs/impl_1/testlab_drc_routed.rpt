@@ -1,0 +1,151 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu May 13 15:19:40 2021
+| Host         : PRIMUS running 64-bit major release  (build 9200)
+| Command      : report_drc -file testlab_drc_routed.rpt -pb testlab_drc_routed.pb -rpx testlab_drc_routed.rpx
+| Design       : testlab
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 21
++-----------+----------+-----------------------------------------------------+------------+
+| Rule      | Severity | Description                                         | Violations |
++-----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PLIO-6    | Warning  | Placement Constraints Check for IO constraints      | 10         |
+| REQP-1617 | Warning  | use_IOB_register                                    | 10         |
++-----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PLIO-6#1 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register ethernet/i_rgmii_tx/dout_reg[0]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#2 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register ethernet/i_rgmii_tx/dout_reg[1]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#3 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register ethernet/i_rgmii_tx/dout_reg[2]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#4 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register ethernet/i_rgmii_tx/dout_reg[3]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#5 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register ethernet/i_rgmii_tx/dout_reg[4]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#6 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register ethernet/i_rgmii_tx/dout_reg[5]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#7 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register ethernet/i_rgmii_tx/dout_reg[6]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#8 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register ethernet/i_rgmii_tx/dout_reg[7]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#9 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register ethernet/i_rgmii_tx/doutctl_reg[0]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#10 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register ethernet/i_rgmii_tx/doutctl_reg[1]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+REQP-1617#1 Warning
+use_IOB_register  
+The FDRE cell ethernet/i_rgmii_tx/dout_reg[0] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#2 Warning
+use_IOB_register  
+The FDRE cell ethernet/i_rgmii_tx/dout_reg[1] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#3 Warning
+use_IOB_register  
+The FDRE cell ethernet/i_rgmii_tx/dout_reg[2] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#4 Warning
+use_IOB_register  
+The FDRE cell ethernet/i_rgmii_tx/dout_reg[3] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#5 Warning
+use_IOB_register  
+The FDRE cell ethernet/i_rgmii_tx/dout_reg[4] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#6 Warning
+use_IOB_register  
+The FDRE cell ethernet/i_rgmii_tx/dout_reg[5] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#7 Warning
+use_IOB_register  
+The FDRE cell ethernet/i_rgmii_tx/dout_reg[6] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#8 Warning
+use_IOB_register  
+The FDRE cell ethernet/i_rgmii_tx/dout_reg[7] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#9 Warning
+use_IOB_register  
+The FDRE cell ethernet/i_rgmii_tx/doutctl_reg[0] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#10 Warning
+use_IOB_register  
+The FDRE cell ethernet/i_rgmii_tx/doutctl_reg[1] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+
